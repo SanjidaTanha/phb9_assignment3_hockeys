@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Hockeys</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="container mx-auto">
+    <!-- header section -->
+    <header class="px-4 lg:px-28">
+        <nav>
+            <div class="navbar bg-white">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl manrope font-extrabold">Hockey<span class="text-orange-500">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-sm text-gray-500">
+                        <li><a class="text-orange-500 font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                        <g clip-path="url(#clip0_5_6)">
+                            <path
+                                d="M2.86667 9.43324C2.86667 10.2912 3.03566 11.1408 3.36399 11.9334C3.69232 12.7261 4.17356 13.4463 4.78024 14.053C5.38691 14.6597 6.10714 15.1409 6.8998 15.4692C7.69246 15.7976 8.54203 15.9666 9.4 15.9666C10.258 15.9666 11.1075 15.7976 11.9002 15.4692C12.6929 15.1409 13.4131 14.6597 14.0198 14.053C14.6264 13.4463 15.1077 12.7261 15.436 11.9334C15.7643 11.1408 15.9333 10.2912 15.9333 9.43324C15.9333 8.57527 15.7643 7.7257 15.436 6.93304C15.1077 6.14038 14.6264 5.42015 14.0198 4.81347C13.4131 4.2068 12.6929 3.72555 11.9002 3.39722C11.1075 3.06889 10.258 2.8999 9.4 2.8999C8.54203 2.8999 7.69246 3.06889 6.8998 3.39722C6.10714 3.72555 5.38691 4.2068 4.78024 4.81347C4.17356 5.42015 3.69232 6.14038 3.36399 6.93304C3.03566 7.7257 2.86667 8.57527 2.86667 9.43324Z"
+                                stroke="#89898B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.6667 19.7001L14.0667 14.1001" stroke="#89898B" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5_6">
+                                <rect width="22.4" height="22.4" fill="white"
+                                    transform="translate(0.0666809 0.100098)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <a class="primaryBtn hover:bg-black">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <div class="lg:relative container mx-auto my-16">
+            <div class="carousel">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black text-white rounded-xl p-8 w-full lg:w-2/5 space-y-3 lg:absolute bottom-4 right-4">
+                <h3 class="font-extrabold text-xl">Meet all the heroes from the field</h3>
+                <p class="font-medium text-sm text-gray-400">My only coworker who follows hockey loves Alex
+                    Ovechkin. In fact, he once claimed that Ovechkin was “the world’s greatest human being.”</p>
+        </div>
+        </div>
+    </header>
+
+
 </body>
+
 </html>
